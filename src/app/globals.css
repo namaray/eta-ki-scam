@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --paper: #f5f6f1;
+  --card: #ffffff;
+  --ink: #16241f;
+  --muted: #55645d;
+  --line: #dfe3da;
+  --brand: #0f4c3a;
+  --brand-ink: #f5f1e6;
+  --marker: #ffd84d;
+  --scam: #b92c1a;
+  --scam-tint: #fbe3dd;
+  --warn: #8f5a00;
+  --warn-tint: #fcefcf;
+  --ok: #17693f;
+  --ok-tint: #dcf1e3;
+  --neutral: #47545a;
+  --neutral-tint: #e6e9e6;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-marker: var(--marker);
+  --color-scam: var(--scam);
+  --color-scam-tint: var(--scam-tint);
+  --color-warn: var(--warn);
+  --color-warn-tint: var(--warn-tint);
+  --color-ok: var(--ok);
+  --color-ok-tint: var(--ok-tint);
+  --color-neutral: var(--neutral);
+  --color-neutral-tint: var(--neutral-tint);
+  --font-sans: var(--font-hind), system-ui, sans-serif;
+  --font-display: var(--font-bricolage), var(--font-hind), system-ui, sans-serif;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin {
+    animation: none;
+  }
+}
